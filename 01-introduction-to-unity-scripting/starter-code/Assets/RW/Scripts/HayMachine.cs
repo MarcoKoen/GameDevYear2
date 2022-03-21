@@ -48,6 +48,15 @@ public class HayMachine : MonoBehaviour
     {
         UpdateMovement();
         UpdateShooting();
+
+        if (Time.time >= 20)
+        {
+            movementSpeed = 16;
+        }
+
+        if (Time.time >= 60 && Time.time <= 300) { 
+            movementSpeed = 20;
+        }
     }
 
     private void UpdateMovement() 

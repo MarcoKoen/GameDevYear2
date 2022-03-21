@@ -30,6 +30,20 @@ public class Sheep : MonoBehaviour
     void Update()
     {
         transform.Translate(Vector3.forward * runSpeed * Time.deltaTime);
+        if (Time.time >= 20)
+        {
+            runSpeed = 13;
+            sheepSpawner.timeBetweenSpawns = 1.5f;
+        }
+
+        if (Time.time >= 60 && Time.time <= 300) {
+            runSpeed = 20;
+        }
+
+        Debug.Log("Time:" + Time.time);
+
+
+
     }
 
     private void HitByHay() 
