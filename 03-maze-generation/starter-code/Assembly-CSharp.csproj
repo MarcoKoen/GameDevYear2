@@ -61,6 +61,8 @@
     <Compile Include="Assets\Scripts\MazeMeshGenerator.cs" />
     <Compile Include="Assets\Scripts\GameController.cs" />
     <Compile Include="Assets\Scripts\FpsMovement.cs" />
+    <Compile Include="Assets\Scripts\Node.cs" />
+    <Compile Include="Assets\Scripts\AIController.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
