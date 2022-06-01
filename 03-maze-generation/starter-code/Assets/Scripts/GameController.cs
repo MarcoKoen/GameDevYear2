@@ -7,6 +7,9 @@ public class GameController : MonoBehaviour
 {
     private MazeConstructor constructor;
 
+    [SerializeField] private int rows;
+    [SerializeField] private int cols;
+
     void Awake()
     {
         constructor = GetComponent<MazeConstructor>();
@@ -14,6 +17,6 @@ public class GameController : MonoBehaviour
 
     void Start()
     {
-
+        constructor.GenerateNewMaze(rows, cols);
     }
 }

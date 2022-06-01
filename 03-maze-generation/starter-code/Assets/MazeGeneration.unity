@@ -220,7 +220,7 @@ GameObject:
   - component: {fileID: 896025807}
   m_Layer: 0
   m_Name: Controller
-  m_TagString: Untagged
+  m_TagString: Generated
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -237,6 +237,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9c7faec76ed71ec49924fc66dcbb3757, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  rows: 20
+  cols: 20
 --- !u!114 &896025808
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -250,10 +252,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   showDebug: 1
-  mazeMat1: {fileID: 0}
-  mazeMat2: {fileID: 0}
-  startMat: {fileID: 0}
-  treasureMat: {fileID: 0}
+  mazeMat1: {fileID: 2100000, guid: ee1783965edfa174f8339d26768f43c2, type: 2}
+  mazeMat2: {fileID: 2100000, guid: 545a9273b54400a4799bbd2fa83df569, type: 2}
+  startMat: {fileID: 2100000, guid: d8719ff0a4b40af42a8410f5d047d6f3, type: 2}
+  treasureMat: {fileID: 2100000, guid: ad3f0fbfa96bd414c8f698354958e49d, type: 2}
+  placementThreshold: 0.1
 --- !u!4 &896025809
 Transform:
   m_ObjectHideFlags: 0
