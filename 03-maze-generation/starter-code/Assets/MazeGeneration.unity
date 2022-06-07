@@ -148,7 +148,7 @@ AudioListener:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 853502829}
-  m_Enabled: 1
+  m_Enabled: 0
 --- !u!20 &853502831
 Camera:
   m_ObjectHideFlags: 0
@@ -240,8 +240,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerPrefab: {fileID: 526753307576256837, guid: d2bbe1f74d9b44d43a4063d538195fc5, type: 3}
   monsterPrefab: {fileID: 895211356916686346, guid: 5cd7f5813d6926a4bae937821a0f2fb8, type: 3}
-  rows: 30
-  cols: 30
+  rows: 11
+  cols: 11
 --- !u!114 &896025808
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -259,7 +259,7 @@ MonoBehaviour:
   mazeMat2: {fileID: 2100000, guid: 545a9273b54400a4799bbd2fa83df569, type: 2}
   startMat: {fileID: 2100000, guid: d8719ff0a4b40af42a8410f5d047d6f3, type: 2}
   treasureMat: {fileID: 2100000, guid: ad3f0fbfa96bd414c8f698354958e49d, type: 2}
-  placementThreshold: 0.1
+  placementThreshold: 0.5
 --- !u!4 &896025809
 Transform:
   m_ObjectHideFlags: 0

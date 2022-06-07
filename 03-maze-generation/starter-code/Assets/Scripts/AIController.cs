@@ -50,6 +50,7 @@ public class AIController : MonoBehaviour
             int playerRow = (int)Mathf.Round(player.transform.position.z / hallWidth);
 
             List<Node> path = FindPath(startRow, startCol, playerRow, playerCol);
+            Debug.Log(path.Count);
 
             if (path != null && path.Count > 1)
             {
@@ -66,7 +67,7 @@ public class AIController : MonoBehaviour
                 {
                     startRow = nextNode.x;
                     startCol = nextNode.y;
-                }
+                }  
             }
         }
     }
@@ -195,4 +196,12 @@ public class AIController : MonoBehaviour
         //out of nodes on the open list
         return null;
     }
+
+    public void StopAI()
+    {
+        startRow = -1;
+        startCol = -1;
+        Destroy(monster);
+    }
+
 }
