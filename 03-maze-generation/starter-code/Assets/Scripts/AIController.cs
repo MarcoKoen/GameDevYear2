@@ -50,7 +50,6 @@ public class AIController : MonoBehaviour
             int playerRow = (int)Mathf.Round(player.transform.position.z / hallWidth);
 
             List<Node> path = FindPath(startRow, startCol, playerRow, playerCol);
-            Debug.Log(path.Count);
 
             if (path != null && path.Count > 1)
             {

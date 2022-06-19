@@ -40,8 +40,6 @@ public class Sheep : MonoBehaviour
             runSpeed = 20;
         }
 
-        Debug.Log("Time:" + Time.time);
-
 
 
     }
