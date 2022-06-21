@@ -1,4 +1,16 @@
-﻿using System.Collections;
+﻿/* Program name: 04-ai-strategy
+   Project file name: GameManager.cs
+   Author: Marco Koen
+   Date: 20/06/2022
+   Language: C#
+   Platform: Windows
+   Purpose: Controls the game
+   Description: 
+   Known Bugs:
+   Additional Features:
+*/
+
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
