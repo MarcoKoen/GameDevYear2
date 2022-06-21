@@ -1,3 +1,14 @@
+/* Program name: Maze Generation
+   Project file name: MazeMeshGenerator.cs
+   Author: Marco Koen
+   Date: 10/06/2022
+   Language: C#
+   Platform: Windows
+   Purpose: Generates the Maze Mesh
+   Description: 
+   Known Bugs:
+   Additional Features:
+*/
 using System.Collections.Generic;
 using UnityEngine;
 
