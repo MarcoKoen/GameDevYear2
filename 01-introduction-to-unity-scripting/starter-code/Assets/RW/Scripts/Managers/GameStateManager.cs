@@ -23,7 +23,7 @@ public class GameStateManager : MonoBehaviour
     // Start is called before the first frame update
     void Awake()
     {
-        PlayerPrefs.GetInt("HighScore", 0).ToString();
+        highScore.text = PlayerPrefs.GetInt("HighScore", 0).ToString();
         Instance = this;
 
     }
@@ -43,11 +43,13 @@ public class GameStateManager : MonoBehaviour
         sheepSaved++;
         UIManager.Instance.UpdateSheepSaved();
         PlayerPrefs.SetInt("HighScore", sheepSaved);
+        
     }
 
     private void GameOver()
     {
         int highScore1 = System.Convert.ToInt32((PlayerPrefs.GetInt("HighScore", 0).ToString()));
+        Debug.Log("Highscore1: " + highScore1);
         
         if (sheepSaved > highScore1)
         {
