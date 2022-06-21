@@ -11,6 +11,7 @@ public class GameController : MonoBehaviour
     private MazeConstructor constructor;
     public GameObject playerPrefab;
     public GameObject monsterPrefab;
+    GameObject pathCube1;
     private AIController aIController;
 
     [SerializeField] private int rows;
@@ -40,36 +41,41 @@ public class GameController : MonoBehaviour
 
     void Update()
     {
-        //Debug.Log("Player x" + Convert.ToInt32(aIController.Player.transform.position.x));
-        //Debug.Log("Player y" + Convert.ToInt32(aIController.Player.transform.position.y));
         int goalRow = constructor.goalRow;
         int goalCol = constructor.goalCol;
-        //Debug.Log("Goal Row = " + goalRow);
-        //Debug.Log("Goal col = " + goalCol);
-        float myFloat = (float)aIController.Player.transform.position.x;
-        float playerZ = (float)aIController.Player.transform.position.z;
-        int myInt = (int)myFloat;
+        int playerCol = (int)Mathf.Round(aIController.Player.transform.position.x / constructor.hallWidth);
+        int playerRow = (int)Mathf.Round(aIController.Player.transform.position.z / constructor.hallWidth);
         float size = (float)3.75;
-
-        int playerRow = (int)Mathf.Round(myFloat / size);
-        int playerCol = (int)Mathf.Round(playerZ / size);
 
         if (Input.GetKeyDown("f"))
         {
+            Debug.Log("PlayerRow" + playerRow);
+            Debug.Log("PlayerCol" + playerCol);
+            
+            GameObject[] objects = GameObject.FindGameObjectsWithTag("pathCube1");
+            foreach (GameObject go in objects)
+            {
+                Destroy(go);
+            }
+
             List<Node> pathCube = aIController.FindPath(playerRow, playerCol, goalRow, goalCol);
             for (int i = 0; i < pathCube.Count; i++)
             {
                 Debug.Log("Pathcube x " + pathCube[i].x);
                 Debug.Log("Pathcube y " + pathCube[i].y);
                 GameObject pathCube1 = GameObject.CreatePrimitive(PrimitiveType.Sphere);
+
+                pathCube1.tag = "pathCube1";
+                pathCube1.GetComponent<SphereCollider>().enabled = false;
                 pathCube1.transform.position = new Vector3((int)Mathf.Round(pathCube[i].y * size), 1, (int)Mathf.Round(pathCube[i].x * size));
-                //Destroy(pathCube1);
+                
 
             }
             Debug.Log("Count " + pathCube.Count);
         }
 
     }
+
 
     private GameObject CreatePlayer()
     {

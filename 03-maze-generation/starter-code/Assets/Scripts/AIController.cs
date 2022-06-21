@@ -1,3 +1,15 @@
+/* Program name: AIController
+   Project file name: AiController.cs
+   Author: Marco Koen
+   Date: 15/06/2022
+   Language: C#
+   Platform:
+   Purpose: Controls the AI monster and directs him towards the player.
+   Description:
+   Known Bugs:
+   Additional Features:Able to use methods for other uses for example finding the path to the treasure.
+*/
+
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
