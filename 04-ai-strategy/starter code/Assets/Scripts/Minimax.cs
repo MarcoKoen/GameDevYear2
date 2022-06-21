@@ -123,7 +123,7 @@ public class Minimax : MonoBehaviour
         gameManager = GameManager.Instance;
         bestMove = CreateMove(board.GetTileFromBoard(new Vector2(0, 0)), board.GetTileFromBoard(new Vector2(0, 0)));
 
-        maxDepth = 3;
+        maxDepth = 5;
         CalculateMinMax(maxDepth, int.MinValue, int.MaxValue, true);
         
         Debug.Log(count);
@@ -157,10 +157,6 @@ public class Minimax : MonoBehaviour
                     if (score > bestMove.score && depth == maxDepth)
                         bestMove = move;
                 }
-                if (score <= alpha)
-                    break;
-                //if (score >= beta)
-                //    break;
             }
             return alpha;
         }
@@ -179,12 +175,10 @@ public class Minimax : MonoBehaviour
 
                 if (score < beta)
                     beta = score;
-
                 if (score >= beta)
                     break;
-                //if (score <= alpha)
-                //    break;
-
+                if (score <= alpha)
+                    break;
             }
             return beta;
         }
