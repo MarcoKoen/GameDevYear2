@@ -1,3 +1,15 @@
+/* Program name: 04-ai-strategy
+   Project file name: Minimax.cs
+   Author: Marco Koen
+   Date: 20/06/2022
+   Language: C#
+   Platform: Windows
+   Purpose: Does the node trees and does the next move
+   Description: 
+   Known Bugs:
+   Additional Features:
+*/
+
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
