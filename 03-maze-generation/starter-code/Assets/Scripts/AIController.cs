@@ -1,11 +1,11 @@
-/* Program name: AIController
+/* Program name: Maze Generation
    Project file name: AiController.cs
    Author: Marco Koen
    Date: 15/06/2022
    Language: C#
    Platform:
    Purpose: Controls the AI monster and directs him towards the player.
-   Description:
+   Description: 
    Known Bugs:
    Additional Features:Able to use methods for other uses for example finding the path to the treasure.
 */

@@ -1,3 +1,15 @@
+/* Program name: Maze Generation
+   Project file name: GameController.cs
+   Author: Marco Koen
+   Date: 20/06/2022
+   Language: C#
+   Platform: Windows
+   Purpose: To control the main operations of the game
+   Description: Creates most of the prefabs and visuals for the game, responsible for triggers between different prefabs.
+   Known Bugs:
+   Additional Features:Able to use methods for other uses for example finding the path to the treasure.
+*/
+
 using System;
 using UnityEngine;
 using System.Collections;
@@ -49,9 +61,6 @@ public class GameController : MonoBehaviour
 
         if (Input.GetKeyDown("f"))
         {
-            Debug.Log("PlayerRow" + playerRow);
-            Debug.Log("PlayerCol" + playerCol);
-            
             GameObject[] objects = GameObject.FindGameObjectsWithTag("pathCube1");
             foreach (GameObject go in objects)
             {
@@ -61,21 +70,13 @@ public class GameController : MonoBehaviour
             List<Node> pathCube = aIController.FindPath(playerRow, playerCol, goalRow, goalCol);
             for (int i = 0; i < pathCube.Count; i++)
             {
-                Debug.Log("Pathcube x " + pathCube[i].x);
-                Debug.Log("Pathcube y " + pathCube[i].y);
                 GameObject pathCube1 = GameObject.CreatePrimitive(PrimitiveType.Sphere);
-
                 pathCube1.tag = "pathCube1";
                 pathCube1.GetComponent<SphereCollider>().enabled = false;
                 pathCube1.transform.position = new Vector3((int)Mathf.Round(pathCube[i].y * size), 1, (int)Mathf.Round(pathCube[i].x * size));
-                
-
             }
-            Debug.Log("Count " + pathCube.Count);
         }
-
     }
-
 
     private GameObject CreatePlayer()
     {
