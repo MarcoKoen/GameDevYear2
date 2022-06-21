@@ -1,3 +1,14 @@
+/* Program name: Maze Generation
+   Project file name: MazeConstuctor.cs
+   Author: Marco Koen
+   Date: 14/06/2022
+   Language: C#
+   Platform: Windows
+   Purpose: Handles the generation and display of the maze.
+   Description: Generates a maze, places and displays the maze aswell as the goal for the user.
+   Known Bugs:
+   Additional Features:
+*/
 using UnityEngine;
 
 public class MazeConstructor : MonoBehaviour

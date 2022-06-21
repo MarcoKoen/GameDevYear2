@@ -254,7 +254,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8c1626db47a739c4e9e2355e98025d06, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  showDebug: 1
+  showDebug: 0
   mazeMat1: {fileID: 2100000, guid: ee1783965edfa174f8339d26768f43c2, type: 2}
   mazeMat2: {fileID: 2100000, guid: 545a9273b54400a4799bbd2fa83df569, type: 2}
   startMat: {fileID: 2100000, guid: d8719ff0a4b40af42a8410f5d047d6f3, type: 2}
