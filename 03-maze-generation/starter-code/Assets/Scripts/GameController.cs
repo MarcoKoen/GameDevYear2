@@ -59,21 +59,21 @@ public class GameController : MonoBehaviour
         int playerRow = (int)Mathf.Round(aIController.Player.transform.position.z / constructor.hallWidth);
         float size = (float)3.75;
 
-        if (Input.GetKeyDown("f"))
+        if (Input.GetKeyDown("f")) 
         {
-            GameObject[] objects = GameObject.FindGameObjectsWithTag("pathCube1");
+            GameObject[] objects = GameObject.FindGameObjectsWithTag("pathCube1"); //creates an array of objects with the pathcube1 tag
             foreach (GameObject go in objects)
             {
-                Destroy(go);
+                Destroy(go); //destroys each gamecube
             }
 
-            List<Node> pathCube = aIController.FindPath(playerRow, playerCol, goalRow, goalCol);
-            for (int i = 0; i < pathCube.Count; i++)
+            List<Node> pathSphere = aIController.FindPath(playerRow, playerCol, goalRow, goalCol); //creates a list of node called pathCube, which is the path to the goal
+            for (int i = 0; i < pathSphere.Count; i++) //iterates through the list and creates a sphere where the node is/
             {
-                GameObject pathCube1 = GameObject.CreatePrimitive(PrimitiveType.Sphere);
-                pathCube1.tag = "pathCube1";
-                pathCube1.GetComponent<SphereCollider>().enabled = false;
-                pathCube1.transform.position = new Vector3((int)Mathf.Round(pathCube[i].y * size), 1, (int)Mathf.Round(pathCube[i].x * size));
+                GameObject pathPhereObject = GameObject.CreatePrimitive(PrimitiveType.Sphere);
+                pathPhereObject.tag = "pathCube1"; 
+                pathPhereObject.GetComponent<SphereCollider>().enabled = false; //makes the sphere collider disabled
+                pathPhereObject.transform.position = new Vector3((int)Mathf.Round(pathSphere[i].y * size), 1, (int)Mathf.Round(pathSphere[i].x * size));
             }
         }
     }
