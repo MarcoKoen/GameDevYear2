@@ -1,3 +1,15 @@
+/* Program name: Tower Defence
+   Project file name: PlaceMonster.cs
+   Author:
+   Date:
+   Language: C#
+   Platform:
+   Purpose:
+   Description: Handles placing the monster & upgrading the monster
+   Known Bugs:
+   Additional Features: 
+*/
+
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
