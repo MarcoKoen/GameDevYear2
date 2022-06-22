@@ -1,3 +1,15 @@
+/* Program name: Tower Defence
+   Project file name: GameManagerBehaviour.cs
+   Author:
+   Date:
+   Language: C#
+   Platform:
+   Purpose:
+   Description: Manages most of the game behaviour
+   Known Bugs:
+   Additional Features: 
+*/
+
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
