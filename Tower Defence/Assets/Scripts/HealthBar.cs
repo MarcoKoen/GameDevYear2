@@ -1,3 +1,15 @@
+/* Program name: Tower Defence
+   Project file name: HealthBar.cs
+   Author:
+   Date:
+   Language: C#
+   Platform:
+   Purpose:
+   Description: Updates the monsters healthbar
+   Known Bugs:
+   Additional Features: 
+*/
+
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
