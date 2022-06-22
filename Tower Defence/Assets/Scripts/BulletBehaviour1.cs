@@ -1,3 +1,15 @@
+/* Program name: Tower Defence
+   Project file name: BulletBehaviour1.cs
+   Author:
+   Date:
+   Language: C#
+   Platform:
+   Purpose:
+   Description: Handles bulletbehaviour
+   Known Bugs:
+   Additional Features: 
+*/
+
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
