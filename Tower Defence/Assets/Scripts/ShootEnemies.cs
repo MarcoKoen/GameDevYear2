@@ -1,3 +1,15 @@
+/* Program name: Tower Defence
+   Project file name: ShootEnemies.cs
+   Author:
+   Date:
+   Language: C#
+   Platform:
+   Purpose:
+   Description: Handles shooting at the enemie
+   Known Bugs:
+   Additional Features: 
+*/
+
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
