@@ -1,3 +1,15 @@
+/* Program name: Tower Defence
+   Project file name: SpawnEnemy.cs
+   Author:
+   Date:
+   Language: C#
+   Platform:
+   Purpose:
+   Description: Spawns the enemies
+   Known Bugs:
+   Additional Features: If the current wave is above 0 than it choses a random enemy to spawn from the enemy list. Will scale with however many enemies are added to the list over time.
+*/
+
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -46,25 +58,19 @@ public class SpawnEnemy : MonoBehaviour
             (enemiesSpawned < waves[currentWave].maxEnemies))
             {
                 lastSpawnTime = Time.time;
-                
-
                 if (currentWave > 0)
                 {
-                    int indexOfList = Random.Range(0, 2);
+                    int indexOfList = Random.Range(0, enemiesList.Count); //gets a random matching an enemy in the list 
                     Debug.Log(indexOfList);
-                    
-                    GameObject newEnemy = (GameObject)Instantiate(enemiesList[indexOfList]);
-                    
+                    GameObject newEnemy = (GameObject)Instantiate(enemiesList[indexOfList]); //creates the new ememy using the random number.
+                    newEnemy.GetComponent<MoveEnemy>().waypoints = waypoints;
                 }
                 else
                 {
                     GameObject newEnemy = (GameObject)Instantiate(waves[currentWave].enemyPrefab);
-                   
+                    newEnemy.GetComponent<MoveEnemy>().waypoints = waypoints;
                 }
-                //newEnemy.GetComponent<MoveEnemy>().waypoints = waypoints;
-                Debug.Log(currentWave);
                 enemiesSpawned++;
-
             }
             if (enemiesSpawned == waves[currentWave].maxEnemies && GameObject.FindGameObjectWithTag("Enemy") == null)
             {
