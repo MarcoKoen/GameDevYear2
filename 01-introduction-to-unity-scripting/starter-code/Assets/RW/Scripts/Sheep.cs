@@ -1,3 +1,15 @@
+/* Program name: starter-code
+   Project file name: Sheep.cs
+   Author:
+   Date:
+   Language:C#
+   Platform:
+   Purpose:
+   Description: Manages the Sheep 
+   Known Bugs: 
+   Additional Features: 
+*/
+
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -30,18 +42,16 @@ public class Sheep : MonoBehaviour
     void Update()
     {
         transform.Translate(Vector3.forward * runSpeed * Time.deltaTime);
-        if (Time.time >= 20)
+        if (Time.time >= 20) 
         {
             runSpeed = 13;
             sheepSpawner.timeBetweenSpawns = 1.5f;
         }
 
-        if (Time.time >= 60 && Time.time <= 300) {
+        if (Time.time >= 60)
+        {
             runSpeed = 20;
         }
-
-
-
     }
 
     private void HitByHay() 
@@ -75,7 +85,7 @@ public class Sheep : MonoBehaviour
 
     private void Drop() 
     {
-       
+        
         dropped = true;
         myRigidbody.isKinematic = false;
         myCollider.isTrigger = false;

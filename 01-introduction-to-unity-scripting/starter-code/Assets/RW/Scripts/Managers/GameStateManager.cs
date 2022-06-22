@@ -1,3 +1,15 @@
+/* Program name: starter-code
+   Project file name: GameStateManager.cs
+   Author:
+   Date:
+   Language:C#
+   Platform:
+   Purpose:
+   Description: Managers the key points of the game
+   Known Bugs: 
+   Additional Features: 
+*/
+
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;

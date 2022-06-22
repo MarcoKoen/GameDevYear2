@@ -1,3 +1,15 @@
+/* Program name: starter-code
+   Project file name: SheepSpawner.cs
+   Author:
+   Date:
+   Language:C#
+   Platform:
+   Purpose:
+   Description: Manages spawning of sheep and updating lists.
+   Known Bugs: 
+   Additional Features: 
+*/
+
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;

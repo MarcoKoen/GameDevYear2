@@ -1,3 +1,15 @@
+/* Program name: starter-code
+   Project file name: HayMachineSwitcher.cs
+   Author:
+   Date:
+   Language:C#
+   Platform:
+   Purpose:
+   Description: Allows you to change Hay Machine color in the menu.
+   Known Bugs: 
+   Additional Features: 
+*/
+
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;

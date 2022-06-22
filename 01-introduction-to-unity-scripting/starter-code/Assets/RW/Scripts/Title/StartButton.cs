@@ -1,3 +1,15 @@
+
+/* Program name: starter-code
+   Project file name: StartButton.cs
+   Author:
+   Date:
+   Language:C#
+   Platform:
+   Purpose:
+   Description: Handles the start button loading the game.
+   Known Bugs: 
+   Additional Features: 
+*/
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;

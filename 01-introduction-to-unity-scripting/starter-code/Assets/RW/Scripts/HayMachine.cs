@@ -1,3 +1,15 @@
+/* Program name: starter-code
+   Project file name: HayMachine.cs
+   Author:
+   Date:
+   Language:C#
+   Platform:
+   Purpose:
+   Description: Manages the HayMachine.
+   Known Bugs: 
+   Additional Features: Over a certain period of time the haymachine movement speed increases.
+*/
+
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -51,11 +63,12 @@ public class HayMachine : MonoBehaviour
 
         if (Time.time >= 20)
         {
-            movementSpeed = 16;
+            movementSpeed = 20;
         }
 
-        if (Time.time >= 60 && Time.time <= 300) { 
-            movementSpeed = 20;
+        if (Time.time >= 60) 
+        { 
+            movementSpeed = 50;
         }
     }
 

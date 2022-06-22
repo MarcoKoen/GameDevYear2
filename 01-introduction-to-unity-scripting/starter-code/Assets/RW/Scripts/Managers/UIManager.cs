@@ -1,3 +1,15 @@
+/* Program name: starter-code
+   Project file name: UIManager.cs
+   Author:
+   Date:
+   Language:C#
+   Platform:
+   Purpose:
+   Description: Managers the AI and updates as things happen.
+   Known Bugs: 
+   Additional Features: 
+*/
+
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;

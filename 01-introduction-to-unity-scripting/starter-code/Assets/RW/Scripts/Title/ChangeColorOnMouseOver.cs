@@ -1,3 +1,15 @@
+/* Program name: starter-code
+   Project file name: ChangeColorOnMouseOver.cs
+   Author:
+   Date:
+   Language:C#
+   Platform:
+   Purpose:
+   Description: Destroys timer.
+   Known Bugs: 
+   Additional Features: 
+*/
+
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
